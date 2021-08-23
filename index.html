@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <!-- Start  -->
+    <div class="start">
+        <button>Start Now</button>
+    </div>
     
+    <!-- Rules  -->
+    <div class="rulesbox">
+        <div class="title"><span>Rules for Quiz </span></div>
+        <div class="list">
+            <div class="rule"><span>1. Time Limit Per Question - <b>20 seconds</b></span></div>             <div class="rule"><span></span></div>
+            <div class="rule"><span>2. Once you select your answer, it can't be undone.</span></div>
+            <div class="rule"><span>3. You can't exit during quiz.</span></div>
+            <div class="rule"><span>4. You will get 1 point for each correct answer</span></div>
+            <div class="rule"><span>5. Result will be displayed when you submit Quiz</span></div>
+        </div>
+        <div class="buttons">
+            <button class="Quit">Quit</button>
+            <button class="Continue">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Questions  -->
+    <div class="Quiz">
+        <header>
+            <div class="title">Basic Problems</div>
+            <div class="timer">
+                <div class="time_left">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+
+        </header>
+        <section>
+            <div class="ques">
+                What is full form of HTML?
+            </div>
+            <div class="options">
+                <div class="option">Hyper Text Preprocessor</div>
+                <div class="option">Hyper Text Markup Language</div>
+                <div class="option">Hyper Text Multiple Language</div>
+                <div class="option">Hyper Tool Multi Language</div>
+            </div>
+        </section>
+        <footer>
+            <div class="count"><span>heloo<p>2</p>friends</span></div>
+            <button>Next</button>
+        </footer>
+    </div>
+
+    <!-- Result  -->
+    <div class="result">
+        <div class="icon">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+        </div>
+        <div class="text">You've completed the Quiz!</div>
+        <div class="score">
+        </div>
+        <div class="buttons">
+            <button class="restart">Try Again</button>
+            <button class="Exit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
