@@ -15,7 +15,6 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .start button{
     font-size: 32px;
     font-weight: 600;
@@ -255,7 +254,7 @@ footer button{
     background: #007bff;
     border: 1px solid #007bff;
     line-height: 10px;
-    opacity: 0;
+    /* opacity: 0; */
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
@@ -279,7 +278,7 @@ footer button.show{
     flex-direction: column;
     justify-content: center;
     transform: translate(-50%, -50%) scale(0.9);
-    /* opacity: 0; */
+    opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
 }
@@ -302,11 +301,11 @@ footer button.show{
     padding: 0 4px;
     font-weight: 600;
 }
-.result .buttons{
+.result .buttons_result{
     display: flex;
     margin: 20px 0;
 }
-.result .buttons button{
+.result .buttons_result button{
     margin: 0 10px;
     height: 45px;
     padding: 0 20px;
@@ -335,4 +334,21 @@ footer button.show{
 .Exit:hover{
     background-color:rgb(139, 74, 201) ;
     color: #fff;
+    cursor: pointer;
+}
+.buttons_result button.restart:hover{
+    background: #0263ca;
+}
+
+.activerules{
+    opacity: 1;
+    z-index: 55;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.activeQuiz{
+    opacity: 1;
+    z-index: 55;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
