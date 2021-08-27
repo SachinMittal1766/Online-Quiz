@@ -1,76 +1,86 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Online Quiz</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/Watermark.jpg"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Start  -->
-    <div class="start">
-        <button>Start Now</button>
-    </div>
-    
-    <!-- Rules  -->
-    <div class="rulesbox">
-        <div class="title"><span>Rules for Quiz </span></div>
-        <div class="list">
-            <div class="rule"><span>1. Time Limit Per Question - <b>20 seconds</b></span></div>             <div class="rule"><span></span></div>
-            <div class="rule"><span>2. Once you select your answer, it can't be undone.</span></div>
-            <div class="rule"><span>3. You can't exit during quiz.</span></div>
-            <div class="rule"><span>4. You will get 1 point for each correct answer</span></div>
-            <div class="rule"><span>5. Result will be displayed when you submit Quiz</span></div>
+   
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+   
+    <div class="Rulesbox">
+        <div class="title"><span>Quiz Instructions</span></div>
+        <div class="rule_list">
+            <div class="rule">1. Time Per Question -  <span> 10 seconds</span> </div>
+            <div class="rule">2. Once you select your answer, it can't be undone.</div>
+            <div class="rule">3. Each question in the quiz is of multiple-choice.</div>
+            <div class="rule">4. You will get 1 point for each correct answer</div>
+            <div class="rule">5. Click on the "Next Question" to go to next question</div>
+            <div class="rule">5. Result will be displayed when you submit Quiz</div>
         </div>
         <div class="buttons">
-            <button class="Quit">Quit</button>
-            <button class="Continue">Continue</button>
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
         </div>
     </div>
 
-    <!-- Quiz Questions  -->
-    <div class="Quiz">
+    <div class="quiz_box">
         <header>
-            <div class="title">Basic Problems</div>
+            <div class="title">Quiz</div>
             <div class="timer">
                 <div class="time_left">Time Left</div>
-                <div class="timer_sec">20</div>
+                <div class="timer_sec">10</div>
             </div>
             <div class="time_line"></div>
         </header>
+
         <section>
-            <div class="ques">
-                What is full form of HTML?
+            <div class="que_text">
             </div>
-            <div class="options">
-                <div class="option">Hyper Text Preprocessor</div>
-                <div class="option">Hyper Text Markup Language</div>
-                <div class="option">Hyper Text Multiple Language</div>
-                <div class="option">Hyper Tool Multi Language</div>
+            <div class="option_list">
             </div>
         </section>
+
         <footer>
-            <div class="count"><span>heloo<p>2</p>friends</span></div>
-            <button>Next</button>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next Question</button>
         </footer>
     </div>
 
-    <!-- Result  -->
-    <div class="result">
-        <div class="icon">
-            <i class="fa fa-trophy" aria-hidden="true"></i>
+    <div class="result_box">
+        <div class="icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+        <div class="complete_text">Thank you for participating in quiz!</div>
+        <div class="score_text">
         </div>
-        <div class="text">You've completed the Quiz!</div>
-        <div class="score">
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
         </div>
-        <div class="buttons_result">
-            <button class="restart">Try Again</button>
-            <button class="Exit">Quit Quiz</button>
+        <div class="sign">Made by Sachin Mittal</div>
+        <div class="social-menu">
+            <ul>
+                <li><a href=" https://github.com/SachinMittal1766" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li><a href=" https://www.instagram.com/sachinmittal2003" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://medium.com/@sachinmittal24687" target="_blank"><i class="fa fa-medium"></i></a>
+                </li>
+                <li><a href=" https://www.linkedin.com/in/mittal-sachin/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a></li>
+            </ul>
         </div>
     </div>
 
     <script src="script.js"></script>
+
 </body>
+</html>
 </html>
