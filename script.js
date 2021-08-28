@@ -53,6 +53,7 @@ restart_quiz.onclick = ()=>{
     startTimerLine(widthValue); 
     timeText.textContent = "Time Left"; 
     next_btn.classList.remove("show"); 
+    next_btn.innerHTML= "Next Question";
 }
 
 quit_quiz.onclick = ()=>{
@@ -145,7 +146,7 @@ next_btn.onclick = ()=>{
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
 
-    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+    let que_tag = '<span>'+ questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
@@ -174,18 +175,14 @@ function optionSelected(answer){
         userScore += 1; 
         answer.classList.add("correct"); 
         answer.insertAdjacentHTML("beforeend", tickIconTag); 
-        // console.log("Correct Answer");
-        // console.log("Your correct answers = " + userScore);
     }else{
         answer.classList.add("incorrect"); 
         answer.insertAdjacentHTML("beforeend", crossIconTag); 
-        // console.log("Wrong Answer");
 
         for(i=0; i < allOptions; i++){
             if(option_list.children[i].textContent == correcAns){ 
                 option_list.children[i].setAttribute("class", "option correct"); 
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); 
-                // console.log("Auto selected correct answer.");
             }
         }
     }
@@ -225,14 +222,13 @@ function startTimer(time){
         }
         if(time < 0){ 
             clearInterval(counter); 
-            timeText.textContent = "Time Off"; 
+            timeText.textContent = "OVER "; 
             const allOptions = option_list.children.length; 
             let correcAns = questions[que_count].answer; 
             for(i=0; i < allOptions; i++){
                 if(option_list.children[i].textContent == correcAns){ 
                     option_list.children[i].setAttribute("class", "option correct");
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); 
-                    // console.log("Time Off: Auto selected correct answer.");
                 }
             }
             for(i=0; i < allOptions; i++){

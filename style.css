@@ -1,16 +1,18 @@
-/* importing google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 62.5%;
 }
 
 
 body{
     background: #007bff;
+    background: url(img/BG1.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
 ::selection{
@@ -71,6 +73,9 @@ body{
     border-radius: 0.5rem 0.5rem 0 0;
     font-size: 3rem;
     font-weight: 600;
+    /* background-color: rgb(245, 237, 237); */
+    background-color: rgb(70, 68, 68);
+    color: #fff;
     /* border: 2px solid black; */
 }
 
@@ -132,6 +137,8 @@ body{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0.3rem 0.5rem 0.1rem rgba(0,0,0,0.1);
+    background-color: rgb(70, 68, 68);
+    color: #fff;
 }
 
 .quiz_box header .title{
